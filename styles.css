@@ -1,21 +1,154 @@
 /* GENERICS */
 
 * {
-    background-color: white;
-    margin:5px;
-    padding:5px;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: gray;
-    /* float:left; */
-    justify-content: center;
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+    color:dimgray;
+    position:relative;
 }
 
 /* SECTIONS */
-nav {
+
+h1 {
     display: inline-block;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin:10px;
+    padding:10px;
+   
 }
 
-header {
+header nav {
+    /* display:inline-block; */
+    /* text-align:center; */
+    float:right;
+    margin:10px;
+    padding:10px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+}
+
+h2 {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+header a:link, a:visited {
+    padding: 14px 25px;
+    border: 2px solid;
+    border-color:pink;
+    border-radius:5px;
+    text-align: center;
+    box-shadow: 5px 4px 10px #2f99da;
+    
+}
+
+.intro-section {
+    text-align:center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+img {
+    margin: 15px;
+    height: 300px;
+    width: 225px;
+    border-radius:10px;
+    box-shadow: 5px 4px 10px #2f99da;
+}
+
+body {
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+main section h2 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.skill-icons {
+    display:flex;
+    flex-direction: column;
+    align-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content:space-around;
+    text-align: center;
+    padding: 5px;
+    margin: 15px;
+    border:2px solid;
+    border-radius: 5px;
+    border-style: outset;
+    width:200px;
+    height: 40px;
+    color: #2f99da;
+    font-size: 20px;
+} 
+
+.project-gallery {
+    display:flex;
+    flex-direction: column;
+    align-content: center;
+    text-align: center;
+    align-items: center;
+}
+.project-card {
+    display: flex;
+    flex-direction:column;
+    align-content:center;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    margin: 15px;
+    border:2px solid;
+    border-radius: 5px;
+    border-style: outset;
+    width:500px;
+    height: 250px;
+    color: #2f99da;
+    font-size: 20px;
+    }
+
+h6 {
+    font-style:italic;
+    color:slateblue;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h4 {
+    color:navy;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h5 {
+    color:navy;
+    font-family:'Courier New', Courier, monospace;
+    font-size:12px;
+}
+
+p {
+    color:rgb(214, 174, 207);
+    text-transform:uppercase;
+    font-size:small;
+    text-shadow:1px 1px #2f99da;
+}
+
+/* @media only screen and (min-width:800px) {
+    section {
+        flex-direction: column;
+        height: 100%;
+        justify-content: space-around;
+    }
+    div {background-color: blue;        
+    }
+} */
+
+/* 
+.intro-section {
     display:flex;
     justify-content: center;
     text-justify: distribute;
@@ -27,47 +160,62 @@ header {
     border-radius: 5px;
 }
 
-main {}
-    div {
-        display:flex;
-        align-items: flex-start;
-        justify-content: center;
-        flex-direction: column;
-    }
-
-        h3 {
-            font-size: small;
-            font-style:italic;
-            margin-top: 50px;
-            color: #2f99da;
-        }
-
-        h2 {
-            font-size:larger;
-        }
-
-        h6 {
-            font-style:italic;
-            margin-top: 0px; 
-        }
-
-
-
-/* UTILITIES */
-img {
-    height: 300px;
-    width: 225px;
-    border-style: dashed;
-    border-radius:10px;
-    margin: 25px;
-    box-shadow: 5px 4px 10px #2f99da;
+h3 {
+    font-size: small;
+    font-style:italic;
+    margin-top: 50px;
+    color: #2f99da;
 }
 
-a {
+
+div {
+    display:flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+h6 {
+    font-style:italic;
+}
+
+body h1 {
+    height:100px;
+}
+    
+section {
+    display:flex;
+    border:1px solid;
+    border-radius: 5px;
+    border-color:red;
+}
+
+section div{
+    display:inline-block;
+    flex-direction: column;
+    flex-wrap:wrap;
+    border:1px solid;
+    border-radius:5px;
+    width:300px;
+    height:400px;
+    align-items:center;
+}
+
+h4 {
+
+}
+
+/* UTILITIES */
+
+
+/* a {
     margin: 20px 20px auto;
     padding: 5px;
     width: 85px;
     text-align: center;
     text-decoration: none;
     box-shadow: 5px 4px 10px #2f99da;
-}
+} */
+/* 
+
+} */ */
