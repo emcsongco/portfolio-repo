@@ -31,13 +31,14 @@ a {
   height: auto;
   width: 200px;
   text-decoration: none;
-  border: 2px solid aqua;
+  border: 2px solid darkslategray;
   background-color: white;
   margin: 10px;
   padding: 5px;
-  color: blue;
-  font-weight: bold;
-  border-radius: 5px;
+  color: navy;
+  font-size: large;
+  font-weight: lighter;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 .main-section {
@@ -64,7 +65,134 @@ i {
   border: 2px solid white;
   margin: 10px;
   padding: 5px;
-  background-color: blue;
+  background-color: rgb(2, 2, 59);
+  color: whitesmoke;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+h1, h2 {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  text-align: center;
+  margin: 10px 20px;
+  padding: 10px 20px;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+a {
+  height: auto;
+  width: 200px;
+  text-decoration: none;
+  border: 2px solid darkslategray;
+  background-color: white;
+  margin: 10px;
+  padding: 5px;
+  color: navy;
+  font-size: large;
+  font-weight: lighter;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.main-section {
+  height: auto;
+  margin: 20px auto;
+  padding: 20px auto;
+}
+
+p {
+  margin: 10px 20px;
+  padding: 10px 20px;
+}
+
+.skill-icons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+i {
+  height: auto;
+  width: 200px;
+  border: 2px solid white;
+  margin: 10px;
+  padding: 5px;
+  background-color: rgb(2, 2, 59);
+  color: whitesmoke;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+h1, h2 {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  text-align: center;
+  margin: 10px 20px;
+  padding: 10px 20px;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+a {
+  height: auto;
+  width: 200px;
+  text-decoration: none;
+  border: 2px solid darkslategray;
+  background-color: white;
+  margin: 10px;
+  padding: 5px;
+  color: navy;
+  font-size: large;
+  font-weight: lighter;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.main-section {
+  height: auto;
+  margin: 20px auto;
+  padding: 20px auto;
+}
+
+p {
+  margin: 10px 20px;
+  padding: 10px 20px;
+  vertical-align: auto;
+}
+
+.skill-icons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+i {
+  height: auto;
+  width: 200px;
+  border: 1px solid white;
+  margin: 10px;
+  padding: 5px;
+  background-color: rgb(2, 2, 59);
   text-align: center;
 }
 
@@ -87,4 +215,55 @@ h4 {
   color: white;
   text-indent: 30px;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+@media only screen and (min-width: 800px) {
+  h1 {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px;
+  }
+  header nav {
+    /* display:inline-block; */
+    /* text-align:center; */
+    float: right;
+    margin: 10px;
+    padding: 10px;
+  }
+  header a:link, a:visited {
+    padding: 14px 25px;
+    border: 2px solid;
+    border-color: pink;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 5px 4px 10px #2f99da;
+  }
+  #profile-photo {
+    margin: 15px;
+    height: 300px;
+    width: 225px;
+    border-radius: 10px;
+    box-shadow: 5px 4px 10px #2f99da;
+    float: left;
+  }
+  main section h2 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  nav, .skill-icons {
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: auto;
+  }
+  i {
+    text-align: center;
+    padding: 25px;
+    margin: 20px;
+    border: 2px solid;
+    border-radius: 5px;
+    border-style: outset;
+    width: 200px;
+    height: auto;
+    font-size: 20px;
+  }
 }/*# sourceMappingURL=main.css.map */
