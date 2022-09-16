@@ -49,13 +49,13 @@ main .main-section__intro {
   padding: 10px 20px;
   vertical-align: auto;
 }
-main .main-section .skill-icons {
+main .main-section .skill-section__list {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-main .main-section .skill-icons i {
+main .main-section .skill-section__list i {
   height: auto;
   width: 200px;
   border: 2px solid white;
@@ -81,6 +81,10 @@ main .main-section .gallery .portfolio-card h4 {
   color: white;
   text-indent: 30px;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+main .main-section .gallery .portfolio-card .card-description {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 12px;
 }
 main .main-section #about-box #profile-photo {
   display: block;
@@ -117,12 +121,12 @@ header .header__navbar navbar__option:visited {
     margin-top: 10px;
     margin-bottom: 10px;
   }
-  main .main-section .skill-section .skill-icons {
+  main .main-section .skill-section .skill-section__list {
     flex-direction: row;
     flex-wrap: wrap;
     margin: auto;
   }
-  main .main-section .skill-section .skill-icons i {
+  main .main-section .skill-section .skill-section__list i {
     text-align: center;
     padding: 25px;
     margin: 20px;
@@ -160,6 +164,10 @@ header .header__navbar navbar__option:visited {
   main .main-section .gallery .portfolio-card .card {
     height: auto;
     margin-top: 15px;
+  }
+  main .main-section .gallery .portfolio-card .card-description {
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    font-size: 12px;
   }
   main .main-section #about-box #profile-photo {
     margin: 15px;

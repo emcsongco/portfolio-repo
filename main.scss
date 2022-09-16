@@ -65,7 +65,7 @@ main {
             vertical-align: auto;
         }
 
-        .skill-icons {
+        .skill-section__list {
             display:flex;
             flex-direction: column;
             justify-content: center;
@@ -93,7 +93,7 @@ main {
                     width:100%;
                     border-radius:5px;
                 }
-        
+
                 h6 {
                     font-style:italic;
                     text-indent:30px;
@@ -106,9 +106,14 @@ main {
                     text-indent: 30px;
                     font-family: $font-card;
                 }
+
+                .card-description {
+                    font-family:$font-card;
+                    font-size: 12px;
+                }
+                
             }
         }
-        
         #about-box {
             #profile-photo {
                 display:block;
@@ -160,7 +165,7 @@ main {
 
             .skill-section {
 
-                .skill-icons {
+                .skill-section__list {
                     flex-direction:row;
                     flex-wrap: wrap;
                     margin:auto;
@@ -206,6 +211,11 @@ main {
                     .card {
                         height:auto;
                         margin-top:15px;
+                    }
+
+                    .card-description {
+                        font-family:$font-card;
+                        font-size: 12px;
                     }
                 }
             }
