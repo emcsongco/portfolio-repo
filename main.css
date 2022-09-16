@@ -44,7 +44,7 @@ main .main-section {
   margin: 20px auto;
   padding: 20px auto;
 }
-main .main-section p {
+main .main-section__intro {
   margin: 10px 20px;
   padding: 10px 20px;
   vertical-align: auto;
@@ -74,7 +74,7 @@ main .main-section .gallery .portfolio-card .card {
 main .main-section .gallery .portfolio-card h6 {
   font-style: italic;
   text-indent: 30px;
-  color: aqua;
+  color: #2f99da;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 main .main-section .gallery .portfolio-card h4 {
