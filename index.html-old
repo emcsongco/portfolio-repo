@@ -1,0 +1,87 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eva's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/54610bda62.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <h1>Eva Marie Songco</h1>
+        <nav>
+                <a href="">Home</a>
+                <a href="">About Me</a>
+                <a href="">My Projects</a>
+        </nav>
+        <section class="intro-section">
+            <h2>"An Up and Coming Story of a Software Developer in the US"</h2>
+            <p>Hello! I am Eva Marie Songco and this is my Student Portfolio page.</p>
+            
+        </section>
+    </header>
+       
+    <main>
+        <section class="skill-section">
+            <h2>Skills Showcase</h2>
+            <p>This section shows the different technical skills I learned from the DB Accelerator Program via Nology.</p>
+            <div class = "skill-icons">
+                <i class="fa-sharp fa-solid fa-file-code">VS Code</i>
+                <i class="fa-brands fa-github">GITHUB</i>
+                <i class="fa-brands fa-css3">CSS</i>
+                <i class="fa-brands fa-sass">SCSS</i>
+                <i class="fa-brands fa-js">JavaScript</i>
+                <i class="fa-brands fa-react">React</i>
+            </div>
+        </section>
+        <section class="project-section">
+            <h2>Projects Gallery</h2>
+            <p>Check out the projects I completed during the course.</p>
+            
+            <section class="project-gallery">
+                
+                <div class="project-card">
+                    <img src="https://www.flexsin.com/blog/wp-content/uploads/2019/12/Custom-Software-Development.jpg" alt="project-icon">
+                    <h6>SKILL</h6>
+                    <h4>Project #1</h4>
+                    <h5>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio dicta quod cumque ipsam reprehenderit velit accusantium voluptatum beatae, voluptatem sed aut consectetur cum consequatur quae tenetur excepturi sequi. Suscipit, illo!</p>                </div>
+
+                <div class="project-card">
+                    <img src="https://www.flexsin.com/blog/wp-content/uploads/2019/12/Custom-Software-Development.jpg " alt="project-icon">
+                    <h6>SKILL</h6>
+                    <h4>Project #2</h4>
+                    <h5>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio dicta quod cumque ipsam reprehenderit velit accusantium voluptatum beatae, voluptatem sed aut consectetur cum consequatur quae tenetur excepturi sequi. Suscipit, illo!</p>
+                </div>
+
+                <div class="project-card">
+                    <img src="https://www.flexsin.com/blog/wp-content/uploads/2019/12/Custom-Software-Development.jpg" alt="project-icon">
+                    <h6>SKILL</h6>
+                    <h4>Project #3</h4>
+                    <h5>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio dicta quod cumque ipsam reprehenderit velit accusantium voluptatum beatae, voluptatem sed aut consectetur cum consequatur quae tenetur excepturi sequi. Suscipit, illo!</p>
+                </div>
+            </section>
+        </section>
+
+        <section class="about-section">
+            <h2>About Me</h2>
+            <img src="./images/Eva.jpg" alt="Eva's photo" />
+            <p>
+              My name is Eva Marie Songco. I am an up and coming junior software
+              developer currently attending a three-month web development training
+              via the Deutsche Bank Accelerator Program.
+            </p>
+            <p>
+              Prior to this, I am the Global Program Manager of dbAcademy at
+              Deutsche Bank, a collaborative learning platform where passionate
+              learners and subject matter experts come together building an active
+              learning community. I am very happy to see you on my page.
+            </p>
+            <p>
+              I hope you like what I have put together for you. Please reach out
+              soon!
+            </p>
+        </section>
+
+</body>
+</html>

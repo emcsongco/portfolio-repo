@@ -34,7 +34,7 @@ header {
             height: auto;
             width: 200px;
             text-decoration: none;
-            border: 2px solid $color-darkgray;
+            border: 1px solid $color-darkgray;
             background-color: $color-white;
             margin: 10px;
             padding: 5px;
@@ -64,29 +64,30 @@ main {
             padding:10px 20px;
             vertical-align: auto;
         }
-
-        .skill-section__list {
-            display:flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-    
-            i {
-                height:auto;
-                width:200px;
-                border: 2px solid $color-white;
-                margin: 10px;
-                padding: 5px;
-                background-color: $color-darkblue;
-                color: $color-whitesmoke;
-                text-align:center;
+        .skill-section {
+            &__list {
+                display:flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+        
+                &__icon {
+                    height:auto;
+                    width:200px;
+                    border: 1px solid $color-white;
+                    margin: 10px;
+                    padding: 5px;
+                    background-color: $color-darkblue;
+                    color: $color-whitesmoke;
+                    text-align:center;
+                }
             }
-        }
+        } 
 
         .gallery {
-            .portfolio-card {
+            &__portfolio-card {
         
-                .card {
+                &__image {
                     // display:block;
                     margin-left:auto;
                     margin-right:auto;
@@ -94,37 +95,39 @@ main {
                     border-radius:5px;
                 }
 
-                h6 {
+                &__skill-category {
                     font-style:italic;
                     text-indent:30px;
                     color:$color-aqua;
                     font-family:$font-card;
                 }
         
-                h4 {
+                &__project-name {
                     color: $color-white;
                     text-indent: 30px;
                     font-family: $font-card;
                 }
 
-                .card-description {
+                &__description {
                     font-family:$font-card;
                     font-size: 12px;
                 }
                 
             }
         }
-        #about-box {
-            #profile-photo {
-                display:block;
-                margin-left:auto;
-                margin-right:auto;
-                width:50%;
-                border-radius:5px;
-            }
-        }    
-    }
 
+        .profile-photo {
+            display:block;
+            margin-left:auto;
+            margin-right:auto;
+            width:50%;
+            border-radius:5px;
+        }
+    // }  
+    // .about-box {
+    //     background-color: #D5CFC0;
+    // }  
+    }
 }
 
 @media only screen and (min-width:800px) {
@@ -147,7 +150,7 @@ main {
             navbar__option:link, 
             navbar__option:visited {
                 padding: 14px 25px;
-                border: 2px solid;
+                border: 1px solid;
                 border-color:$color-pink;
                 border-radius:5px;
                 text-align: center;
@@ -158,23 +161,23 @@ main {
 
     main {
         .main-section {
-            h2 {
+            &__section-title {
                 margin-top: 10px;
                 margin-bottom: 10px;
             }
 
             .skill-section {
 
-                .skill-section__list {
+                &__list {
                     flex-direction:row;
                     flex-wrap: wrap;
                     margin:auto;
                 
-                    i {
+                    &__icon {
                         text-align: center;
                         padding: 25px;
                         margin: 20px;
-                        border:2px solid;
+                        border:1px solid;
                         border-radius: 5px;
                         border-style: outset;
                         width:200px;
@@ -189,7 +192,7 @@ main {
                 grid-template-columns: 1fr 1fr 1fr;
                 grid-template-rows: 3fr;
 
-                .portfolio-card {
+                &__portfolio-card {
                     display:flex;
                     flex-direction:column;
                     flex-wrap:wrap;
@@ -201,34 +204,31 @@ main {
                     text-align: center;
                     padding: 5px;
                     margin: 15px;
-                    border:2px solid;
+                    border:1px solid;
                     border-radius: 5px;
                     border-style: outset;
                     width:auto;
                     height: auto;
                     font-size: 20px;
                 
-                    .card {
+                    &__image {
                         height:auto;
                         margin-top:15px;
                     }
 
-                    .card-description {
+                    &__description {
                         font-family:$font-card;
                         font-size: 12px;
                     }
                 }
             }
-            
-            #about-box {
-                #profile-photo {
-                    margin: 15px;
-                    height: 300px;
-                    width: 225px;
-                    border-radius:10px;
-                    box-shadow: 5px 4px 10px $color-aqua;
-                    float:left;
-                }
+            .profile-photo {
+                margin: 15px;
+                height: 300px;
+                width: 225px;
+                border-radius:10px;
+                box-shadow: 5px 4px 10px $color-aqua;
+                float:left;
             }
         }
     }
