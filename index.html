@@ -17,13 +17,13 @@
       <h1 class="header__title" id="home">Eva Marie Songco</h1>
       <nav class="header__navbar">
         <a class="navbar__option" href="#home">HOME</a>
-        <a class="navbar__option" href="#about-box">ABOUT</a>
+        <a class="navbar__option" href="#about-me">ABOUT</a>
         <a class="navbar__option" href= "#portfolio-box">PORTFOLIO</a>
         <a class="navbar__option" id="contact-button" href="#">Get in touch!</a>
       </nav>
     </header>
     
-    <main>
+    <main id="home">
       <section class="main-section intro-box">
         <h2 class="section__title">Junior Software Developer In The Making</h2>
         <p class="main-section__intro">Hello! Thank you for visiting my Student Portfolio page. There is nothing much at the moment but feel free to browse around.</p>
@@ -33,24 +33,26 @@
       <section class="main-section skills-box">
         <h2 class="main-section__section__title">Skills</h2>
         <p class="main-section__intro">
-          This section shows the different technical skills I learned, and will be learning, from the
-          DB Accelerator Program via Nology. I am excited to grasp concepts and explore more in the next 12-weeks.
+          This section shows the different technical skills I learned from the DB Accelerator Program via Nology. I am very excited in this learning journey to grasp concepts and explore more in the next 12-weeks.
         </p>
 
         <section class="skill-section">
           <div class="skill-section__list">
-            <i class="skill-section__list__icon fa-sharp fa-solid fa-file-code">VS Code</i>
-            <i class="skill-section__list__icon fa-brands fa-github">GITHUB</i>
+            <i class="skill-section__list__icon fa-brands fa-html5">HTML</i>
             <i class="skill-section__list__icon fa-brands fa-css3">CSS</i>
             <i class="skill-section__list__icon fa-brands fa-sass">SCSS</i>
             <i class="skill-section__list__icon fa-brands fa-js">JavaScript</i>
+            <i class="skill-section__list__icon fa-sharp fa-solid fa-file-code">VS Code</i>
+            <i class="skill-section__list__icon fa-brands fa-github">GITHUB</i>
+            <i class="skill-section__list__icon fa-brands fa-node-js">node.js</i>
+            <i class="skill-section__list__icon fa-brands fa-npm">npm</i>
             <i class="skill-section__list__icon fa-brands fa-react">React</i>
           </div>
         </section>
       </section>
 
 
-      <section class="main-section portfolio-box">
+      <section class="main-section portfolio-box" id="portfolio-box">
         <h2 class="main-section__section__title">My Portfolio</h2>
         <p class="main-section__intro">This is where I will be collecting my projects. Visit me often and see me grow my collection.  As I learn more, this is where you can check out the projects I completed during the course.</p>
         
@@ -58,29 +60,26 @@
           <div class="gallery__portfolio-card">
               <img
               class="gallery__portfolio-card__image"
-              src="./images/best-monitor.jpeg"
+              src="./images/bk-calc.jpg"
               alt="project-icon"
             />
-            <h6 class="gallery__portfolio-card__skill-category">SKILL</h6>
-            <h4 class="gallery__portfolio-card__project-name">Project #1</h4>
+            <h6 class="gallery__portfolio-card__skill-category">JS, CSS, SCSS, HTML</h6>
+            <h4 class="gallery__portfolio-card__project-name">Calculator</h4>
             <p class="gallery__portfolio-card__description">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio dicta
-              quod cumque ipsam reprehenderit velit accusantium voluptatum beatae,
-              voluptatem sed aut consectetur cum consequatur quae tenetur
-              excepturi sequi. Suscipit, illo!
+              My first web development project incorporating HTML, SASS and JS. I used switch-case statements, if-else statements, for-each iterator, event listeners, DOM and more. This calculator is inspired by a simple calculator application on my iPhone that is quite easy to use. Keeping it basic.
             </p>
           </div>
 
           <div class="gallery__portfolio-card">
               <img
               class="gallery__portfolio-card__image"
-              src="images/best-monitor.jpeg"
+              src="images/bk-ttt.jfif"
               alt="project-icon"
             />
-            <h6 class="gallery__portfolio-card__skill-category">SKILL</h6>
-            <h4 class="gallery__portfolio-card__project-name">Project #2</h4>
+            <h6 class="gallery__portfolio-card__skill-category">JS, CSS, SCSS, HTML</h6>
+            <h4 class="gallery__portfolio-card__project-name">TIC-TAC-TOE</h4>
             <p class="gallery__portfolio-card__description">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque ex enim distinctio accusantium iure non molestiae, ipsum maiores incidunt nesciunt repudiandae vel saepe sit culpa amet est, magni porro deleniti?
+              Let's play a game of tic-tac-toe. Here's my version of this classic game that we all love. Whether you'd like to pass the time or you just want to smile by looking at this cute page I developed, Happy to see you here so check this out. I used CSS grid/flex with simple if-else statements, DOM innerHTML, event listener and better demonstration of modularized code. 
             </p>
           </div>
           <div class="gallery__portfolio-card">
@@ -98,7 +97,7 @@
       </section>
 
       
-      <section class="main-section about-box">
+      <section class="main-section about-box" id="about-me">
         <h2 class="main-section__section__title">About Me</h2>
         <img class="profile-photo" id="profile-pic" src="./images/Eva.jpg" alt="Eva's photo" />
         <p>

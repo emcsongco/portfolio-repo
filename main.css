@@ -118,8 +118,12 @@ header .header__navbar navbar__option:visited {
     box-shadow: 5px 4px 10px #2f99da;
   }
   main .main-section__section-title {
+    display: flex;
+    align-items: center;
+    justify-content: cemter;
     margin-top: 10px;
     margin-bottom: 10px;
+    text-align: center;
   }
   main .main-section .skill-section__list {
     flex-direction: row;

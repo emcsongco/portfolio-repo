@@ -123,12 +123,9 @@ main {
             width:50%;
             border-radius:5px;
         }
-    // }  
-    // .about-box {
-    //     background-color: #D5CFC0;
-    // }  
-    }
+    }  
 }
+
 
 @media only screen and (min-width:800px) {
 
@@ -162,8 +159,12 @@ main {
     main {
         .main-section {
             &__section-title {
+                display:flex;
+                align-items: center;
+                justify-content: cemter;
                 margin-top: 10px;
                 margin-bottom: 10px;
+                text-align: center;
             }
 
             .skill-section {
